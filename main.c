@@ -64,39 +64,39 @@ int main()
     }
 
     // insert query
-    char student_name[100], student_id[10], student_program[100], date_of_commencement[15];
-    char date_of_graduation[15], insert_sql[1000];
+    char student_name[27], student_id[7], student_program[27], date_of_commencement[12];
+    char date_of_graduation[12], insert_sql[500];
 
     printf("Please provide info to the properties below in order\n");
 
     // student name
     printf("Name: ");
-    fgets(student_name, 100, stdin);
+    fgets(student_name, 27, stdin);
 
     // student id
     // for now id is of size 5 - change in code above - create_db_sql
     printf("Index Number: ");
-    fgets(student_id, 10, stdin);
+    fgets(student_id, 7, stdin);
 
     // student program offered
     printf("Program: ");
-    fgets(student_program, 100, stdin);
+    fgets(student_program, 27, stdin);
 
     // student date of freshman
     // enter date in format YYYY-MM-DD
     // example: 2025-06-12
     printf("Date of freshman in format[YYYY-MM-DD]: ");
-    fgets(date_of_commencement, 15, stdin);
+    fgets(date_of_commencement, 12, stdin);
 
     // student date of graduation
     printf("Date of graduation: ");
-    fgets(date_of_graduation, 15, stdin);
+    fgets(date_of_graduation, 12, stdin);
 
     // use the concept of string builder to form the insert_query
     sprintf(insert_sql, "INSERT INTO STUDENT0(STUDENT_NAME, STUDENT_ID, STUDENT_PROGRAM, DATE_OF_COMMENCEMENT, DATE_OF_GRADUATION)VALUES('%s', '%s', '%s', '%s', '%s')\n",
             student_name, student_id, student_program, date_of_commencement, date_of_graduation);
 
-    printf("%s", insert_sql);
+    // printf("%s", insert_sql);
 
     if (sqlite3_exec(conn, insert_sql, callback, 0, &errmsg) == SQLITE_OK)
     {

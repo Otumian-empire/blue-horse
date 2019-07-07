@@ -59,6 +59,8 @@ blue-horse is meant to be GUI system to ease of use by interested parties. Users
 1. [otumian-empire](https://github.com/Otumian-empire/)
 
 # [to do](#content)
-break down the current file structure into headers
+1. break down the current file structure into headers
+1. create functions for **CRUD** - `CREATE, READ, UPDATE AND DELETE`
+1. modify the README.md to update how to compile
 
 <!-- [<button style="background: #235aae; color: white; border: none; padding: 5px; border-radius: 5px;">go to top</button>](#content) -->
