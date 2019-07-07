@@ -1,5 +1,5 @@
 /*
-test.c 
+main.c 
 created on Friday, 2019, 05 July
 By Otumian
 */
@@ -13,8 +13,7 @@ table schema:
 #include <stdio.h>
 #include <sqlite3.h>
 
-// i didn't write this code
-//
+// i didn't write this callback
 static int callback(void *NotUsed, int argc, char **argv, char **azColName)
 {
     int i;
