@@ -50,13 +50,13 @@ know basics of:
 # [how to compile](#content)
 This depends on the compiler you are using. I will use compiler_name to represent the compiler that you are using.
 <br>
-Run: ```compiler_name -o run -Wall filename -l sqlite3``` and then ```./run``` after a successful build
+Run: ```compiler_name -o run -Wall main.c -l sqlite3``` and then ```./run``` after a successful build
 
 # [how blue-horse was envisioned](#content)
 blue-horse is meant to be GUI system to ease of use by interested parties. Users can create multiple databases and tables and this means user has the whole control over what user wants. In the future add features like exporting the tables or the database into a file (csv may be).
 
 # [contributors](#content)
-me
+1. [otumian-empire](https://github.com/Otumian-empire/)
 
 # [to do](#content)
 break down the current file structure into headers
